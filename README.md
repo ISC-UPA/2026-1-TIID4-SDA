@@ -1,2 +1,2 @@
 # 2026-1-TIID4-SDA
-Data Structure and Algorithms with Python
+Data Structure and Algorithms.

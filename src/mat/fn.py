@@ -10,6 +10,8 @@ def transponer_matriz(matriz):
     C = len(matriz[0])
     
     transpuesta = [[0] * F for i in range(C)]
+    #transpuesta = [[0 for _ in range(F)] for _ in range(C)]
+
     # int[][] transpuesta = new int[C][F];
 
     for i in range(F):

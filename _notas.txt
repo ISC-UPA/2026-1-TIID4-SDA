@@ -18,6 +18,16 @@ pip install numpy pandas requests
 G:\Mi unidad\home\core\code\2026-1-TIID4-SDA>python main.py
 python argumentos.py juan carlos
 
+import sys
+import os
+# Add the parent directory of 'src' to the system path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+#sys.path.append('g:/Mi unidad/home/core/code/2026-1-TIID4-SDA/')
+# Esto añade: g:\Mi unidad\home\core\code\2026-1-TIID4-SDA\
+import src.mat.fn as app
+#from src.mat import fn as app
+
 print(f"{nombres[i]:<8}", end="")
+
 
  

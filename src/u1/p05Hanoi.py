@@ -1,5 +1,5 @@
 import os
-contador = 0
+
 
 def hanoi(n, f, to, via):
     global contador
@@ -14,10 +14,11 @@ def hanoi(n, f, to, via):
         hanoi(n-1, via, to, f)                          # step 3
 
 os.system('cls')
-n = 4
+contador = 0
+n = 3
 f = '1'
-to = '3'
-via = '2'
+to = '2'
+via = '3'
 hanoi(n, f, to, via)
 print("Total movimientos:", contador, "(esperado:", 2**n - 1, ")")
 

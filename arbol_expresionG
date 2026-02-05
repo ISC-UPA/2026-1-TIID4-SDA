@@ -1,0 +1,33 @@
+// Árbol de Expresión
+digraph {
+	node [fillcolor=lightblue shape=circle style=filled]
+	n0 [label="*" fillcolor=lightcoral]
+	n1 [label="+" fillcolor=lightcoral]
+	n0 -> n1
+	n2 [label=a fillcolor=lightgreen]
+	n1 -> n2
+	n3 [label="-" fillcolor=lightcoral]
+	n1 -> n3
+	n4 [label=b fillcolor=lightgreen]
+	n3 -> n4
+	n5 [label=c fillcolor=lightgreen]
+	n3 -> n5
+	n6 [label="/" fillcolor=lightcoral]
+	n0 -> n6
+	n7 [label="-" fillcolor=lightcoral]
+	n6 -> n7
+	n8 [label=d fillcolor=lightgreen]
+	n7 -> n8
+	n9 [label=e fillcolor=lightgreen]
+	n7 -> n9
+	n10 [label="-" fillcolor=lightcoral]
+	n6 -> n10
+	n11 [label="+" fillcolor=lightcoral]
+	n10 -> n11
+	n12 [label=f fillcolor=lightgreen]
+	n11 -> n12
+	n13 [label=g fillcolor=lightgreen]
+	n11 -> n13
+	n14 [label=h fillcolor=lightgreen]
+	n10 -> n14
+}

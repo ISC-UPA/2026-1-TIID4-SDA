@@ -1,4 +1,14 @@
 https://github.com/ISC-UPA/2026-1-TIID4-SDA
+https://vscodeedu.com/courses/intro-to-python
+https://app.datacamp.com/
+https://cs50.harvard.edu/python/
+
+# De .ipynb a .py
+jupyter nbconvert --to script archivo.ipynb
+
+# De .py a .ipynb (requiere nbformat y jupytext)
+jupytext --to notebook archivo.py
+
 
 # Crear un Entorno Virtual (Recomendado)
 python -m venv venv

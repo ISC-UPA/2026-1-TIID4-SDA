@@ -1,0 +1,28 @@
+use("prueba");
+
+// Mostrar las colecciones existentes
+db.getCollectionNames();
+// Mostrar una pausa
+
+
+
+// Mostrar los documentos en la colección 'empleados'
+const allDocs = db.getCollection('empleados').find().toArray();
+console.log(allDocs);
+
+// Encontrar el empleado con el nombre "Carlos"
+db.getCollection('empleados').find({ nombre: "Carlos" });
+
+[
+  db.empleados.countDocuments(), // Resultado 1
+  db.empleados.findOne({id: 1}),  // Resultado 2
+  db.empleados.find().toArray()   // Resultado 3
+]
+
+// total de empleados por departamento
+db.empleados.aggregate([
+  {$group: {
+    _id: "$departamento",
+    totalEmpleados: {$sum: 1}
+  }}
+])

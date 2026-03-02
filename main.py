@@ -6,12 +6,12 @@ import sys
 import subprocess
 
 # 2. Importaciones de terceros
-import requests
+# import requests
 import numpy as np
 
 # 3. Importaciones locales (tus propios módulos)
-from src.calculadora import sumar, restar  # importar funciones específicas
-import src.calculadora as calc             # importar todo el módulo
+from src.sumar_restar import sumar, restar  # importar funciones específicas
+import src.sumar_restar as calc             # importar todo el módulo
 from src.Database import Database
 
 # 4. Funciones auxiliares

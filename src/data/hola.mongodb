@@ -1,0 +1,13 @@
+// 1. Selecciona la base de datos (se creará si no existe)
+use('prueba');
+
+// 2. Inserta un documento en la colección 'empleados'
+// Esto crea la colección y define los campos id y nombre
+db.getCollection('empleados').insertOne({
+  "id": 2,
+  "nombre": "Juan Pérez"
+});
+
+// 3. (Opcional) Consulta para verificar
+db.getCollection('empleados').find();
+

@@ -32,7 +32,7 @@ if __name__ == "__main__":
     
     # No recomendado: ejecutar un script como un subproceso
     resultado = subprocess.run(
-        ["python", "src/calculadora.py"],
+        ["python", "src/sumar_restar.py"],
         capture_output=True,
         text=True
     )
